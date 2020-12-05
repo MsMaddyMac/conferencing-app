@@ -8,6 +8,12 @@ app.listen(PORT, () => {
   console.log("Listening on port " + PORT)
 })
 
+app.get('/', (req, res) => {
+  res.sendFile(__dirname + "/index.html")
+})
+
+app.use(express.static('public'))
+
 // Set up socket
 io.on('connection', function(socket){
   console.log("client is connected" + socket.id)
