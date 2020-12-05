@@ -35,12 +35,12 @@ const message = document.getElementById('message'),
 
       // uses peer for signaling server for video chat
       function getLVideo(callbacks) {
-        navigator.mediaDevices.getUserMedia = navigator.mediaDevices.getUserMedia || navigator.webkitGetUserMedia || navigator.mozGetUserMedia;
+        navigator.getUserMedia = navigator.getUserMedia || navigator.webkitGetUserMedia || navigator.mozGetUserMedia;
         var constraints = {
           audio: true,
           video: true
         }
-        navigator.mediaDevices.getUserMedia(constraints, callbacks.success, callbacks.error)
+        navigator.getUserMedia(constraints, callbacks.success, callbacks.error)
       }
 
       function recStream(stream, elemid) {
