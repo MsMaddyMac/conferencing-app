@@ -20,6 +20,8 @@
   "homepage": "https://github.com/MsMaddyMac/conferencing-app#readme",
   "dependencies": {
     "express": "^4.17.1",
+    "peer": "^0.6.1",
+    "peerjs": "^1.3.1",
     "socket.io": "^3.0.3"
   },
   "devDependencies": {

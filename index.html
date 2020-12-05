@@ -13,12 +13,17 @@
   <div class="container">
     <div class="row">
       <div class="col-sm-6 col-md-6 col-lg-6">
+        remote
         <video class="rVideo" autoplay="autoplay"></video>
       </div>
       <div class="col-sm-6 col-md-6 col-lg-6">
+        local
         <video class="lVideo" autoplay="autoplay" muted></video>
       </div>
     </div>
+    <input type="text" id="connId" class="form-control" placeholder="Enter a connection ID" required>
+    <button id="conn_button" class="btn btn-lg btn-success btn-block" type="submit">Connect</button>
+    <button id="call_button" class="btn btn-lg btn-warning btn-block" type="submit">Call</button>
   </div>
 
   <hr>
