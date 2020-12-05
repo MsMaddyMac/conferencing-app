@@ -119,6 +119,19 @@ const message = document.getElementById('message'),
       });
 
       // ask to call
+      document.getElementById('call_button').addEventListener('click', function(){
+        console.log('Calling a peer:' + peer_id);
+        console.log('Peer object', peer);
+
+        var call = peer.call(peer_id, window.localstream);
+
+        call.on('stream', function(stream){
+          window.peer_stream = stream;
+
+          recStream(stream, 'rVideo');
+        })
+      })
+
       // accept call
       // display the remote and local video on the clients
 
