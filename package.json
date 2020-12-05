@@ -1,0 +1,28 @@
+{
+  "name": "conferencing-app",
+  "version": "1.0.0",
+  "description": "chat and video conferencing app",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js",
+    "server": "nodemon server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MsMaddyMac/conferencing-app.git"
+  },
+  "author": "MsMaddyMac",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MsMaddyMac/conferencing-app/issues"
+  },
+  "homepage": "https://github.com/MsMaddyMac/conferencing-app#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "socket.io": "^3.0.3"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.6"
+  }
+}
