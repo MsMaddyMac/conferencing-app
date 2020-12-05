@@ -23,5 +23,5 @@ io.on('connection', function(socket){
   });
   socket.on('userTyping', (data) => {
     socket.broadcast.emit('userTyping', data)
-  })
+  });
 })
