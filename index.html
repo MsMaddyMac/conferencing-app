@@ -1,7 +1,9 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="no-js">
 <head>
   <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="description" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
   <link rel="stylesheet" href="">
@@ -9,11 +11,13 @@
 <body>
   <h1 class="h3 mb-3 font-weight-normal">Chat With Me</h1>
   <div id="chat-window">
+    <div id="output"></div>
+    <div id="typing"></div>
   </div>
   <form class="form-signin">
     <input type="text" id="handle" class="form-control" placeholder="Name" required autofocus>
     <input type="text" id="message" class="form-control" placeholder="Enter a message" required>
-    <button class="btn btn-lg btn-primary btn-block" type="submit">Send</button>
+    <button id="button" class="btn btn-lg btn-primary btn-block" type="submit">Send</button>
   </form>
   <script src="/socket.io/socket.io.js"></script>
   <script src="/client.js" async defer></script>
